@@ -1,0 +1,160 @@
+.header-container {
+  max-width: 1184px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ul-el {
+  display: flex;
+}
+.sign-up {
+  width: 115px;
+  height: 49px;
+  border-radius: 100px;
+  background-color: #5d50c6;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.regist {
+  display: flex;
+}
+.log-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 105px;
+  height: 49px;
+}
+.header-main {
+  padding: 36.5px 0;
+}
+.burger-bar {
+  display: none;
+}
+/* section style */
+.container-block {
+  max-width: 1184px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.left-block {
+  width: 412px;
+}
+.right-block {
+  width: 772px;
+}
+.right-image {
+  width: 100%;
+}
+.title-left {
+  font-size: 69px;
+}
+.span-el {
+  color: #f85e9f;
+}
+.get {
+  width: 141px;
+  height: 49px;
+  background-color: #5d50c6;
+  color: #fff;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.watch {
+  width: 181px;
+  height: 56px;
+  border: 1px solid #eeeeee;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-small {
+  display: flex;
+  column-gap: 16px;
+}
+
+
+/* form elements */
+.form-el {
+    max-width: 700px;
+    width: 100%;
+}
+.form-div-element {
+    display: flex;
+    flex-direction: column;
+}
+.input-el {
+    height: 60px;
+    border: none;
+    border-bottom: 2px solid #000;
+    margin: 15px 0;
+    color: red;
+    outline: none;
+}
+.btn-submit {
+    background-color: lightblue;
+    border: none;
+    width: 200px;
+    height: 60px;
+    border-radius: 25px;
+}
+
+@media (max-width: 1024px) {
+  .navigation {
+    display: none;
+  }
+  .burger-bar {
+    display: block;
+    order: 1;
+  }
+  .logo {
+    order: 2;
+  }
+  .regist {
+    order: 3;
+  }
+  .container-block {
+    flex-direction: column-reverse;
+    row-gap: 64px;
+  }
+  .left-block {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .right-block {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .regist {
+    display: none;
+  }
+  .logo {
+    order: 1;
+  }
+  .burger-bar {
+    order: 2;
+  }
+  .left-small {
+    flex-direction: column;
+    width: 100%;
+    row-gap: 24px;
+  }
+  .get,
+  .watch {
+    width: 100%;
+  }
+}
