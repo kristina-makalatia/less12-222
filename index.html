@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="John Doe">
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -16,10 +23,10 @@
 
         <nav class="navigation">
           <ul class="ul-el">
-            <li><a href="">Link 1</a></li>
-            <li><a href="">Link 2</a></li>
-            <li><a href="">Link 3</a></li>
-            <li><a href="">Link 4</a></li>
+            <li><a class="a-item" href="">Home</a></li>
+            <li><a class="a-item" href="">Contact</a></li>
+            <li><a class="a-item" href="">About Us</a></li>
+            <li><a class="a-item" href="">News</a></li>
           </ul>
         </nav>
 
@@ -39,6 +46,16 @@
       </div>
     </header>
     <main>
+      <section>
+        <p class="hello-el">hello</p>
+
+        <div class="box-wrapers-new">
+          <div class="box-new">1</div>
+          <div class="box-new">2</div>
+          <div class="box-new">3</div>
+          <div class="box-new">4</div>
+        </div>
+      </section>
       <section>
         <div class="container-block">
           <div class="left-block">
@@ -65,11 +82,29 @@
         </div>
       </section>
 
+      <section class="section-new">
+        <div class="container-new">
+          <div class="left-title-block">
+            <h4 class="title1">Top Destination</h4>
+            <h3 class="title2">Expliore top Destination</h3>
+          </div>
+          <div class="right-arrows-block">
+            <div class="white">
+              <i class="fa-solid fa-arrow-left"></i>
+            </div>
+            <div class="blue">
+              <img src="images/arrow-left 2.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section>
         <form class="form-el" action="">
           <div class="form-div-element">
             <label for="username-field">Username</label>
-            <input class="input-el"
+            <input
+              class="input-el"
               type="text"
               id="username-field"
               name="username"
@@ -79,12 +114,23 @@
 
           <div class="form-div-element">
             <label for="mypassw">Password</label>
-            <input class="input-el"
+            <input
+              class="input-el"
               type="password"
               id="mypassw"
               name="password"
               placeholder="Enter Your Password.."
             />
+          </div>
+
+          <div class="form-div-element">
+            <label for="mess">Your Message</label>
+            <textarea
+              class="textarea-el"
+              name=""
+              id="mess"
+              placeholder="Enter Your Message"
+            ></textarea>
           </div>
 
           <button class="btn-submit" type="submit">რეგისტრაცია</button>
