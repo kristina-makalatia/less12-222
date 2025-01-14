@@ -1,18 +1,36 @@
+:root {
+  --red-color: red;
+  /* --main-size:  */
+}
+
+
 .header-container {
   max-width: 1184px;
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .ul-el {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 300px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .a-item {
   position: relative;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
   transition: all 2s;
 }
 .a-item::before {
@@ -23,6 +41,8 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
   transition: all 2s;
 }
 .a-item:hover::before {
@@ -35,7 +55,7 @@
   height: 200px;
 }
 .box-new:first-child {
-  background-color: red;
+  background-color: var(--red-color);
 }
 .box-new:nth-child(2) {
   background-color: yellow;
@@ -54,7 +74,6 @@
   background-color:aqua;
 } */
 
-
 /*  */
 
 .sign-up {
@@ -63,16 +82,30 @@
   border-radius: 100px;
   background-color: #5d50c6;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .regist {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .log-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   width: 105px;
   height: 49px;
@@ -88,7 +121,11 @@
   max-width: 1184px;
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .left-block {
@@ -112,8 +149,14 @@
   background-color: #5d50c6;
   color: #fff;
   border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .watch {
@@ -121,12 +164,22 @@
   height: 56px;
   border: 1px solid #eeeeee;
   border-radius: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .left-small {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
   column-gap: 16px;
 }
 
@@ -136,7 +189,12 @@
   width: 100%;
 }
 .form-div-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .input-el {
@@ -144,7 +202,7 @@
   border: none;
   border-bottom: 2px solid #000;
   margin: 15px 0;
-  color: red;
+  color: var(--red-color);
   outline: none;
 }
 .btn-submit {
@@ -160,7 +218,11 @@
   max-width: 1184px;
   width: 90%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .white {
@@ -169,8 +231,14 @@
   border-radius: 50%;
   background-color: #fff;
   border: 1px solid #191825;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -179,12 +247,22 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .right-arrows-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-column-gap: 32px;
+  -moz-column-gap: 32px;
   column-gap: 32px;
 }
 .section-new {
@@ -203,6 +281,22 @@
   height: 200px;
   resize: none;
   outline: none;
+}
+.textarea-el::-webkit-input-placeholder {
+  color: red;
+  font-size: 14px;
+}
+.textarea-el::-moz-placeholder {
+  color: red;
+  font-size: 14px;
+}
+.textarea-el:-ms-input-placeholder {
+  color: red;
+  font-size: 14px;
+}
+.textarea-el::-ms-input-placeholder {
+  color: red;
+  font-size: 14px;
 }
 .textarea-el::placeholder {
   color: red;
@@ -236,23 +330,39 @@
   }
   .burger-bar {
     display: block;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
   }
   .logo {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
   }
   .regist {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
     order: 3;
   }
   .container-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
     row-gap: 64px;
   }
   .left-block {
     width: 100%;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
   .right-block {
@@ -265,12 +375,19 @@
     display: none;
   }
   .logo {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
     order: 1;
   }
   .burger-bar {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
     order: 2;
   }
   .left-small {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100%;
     row-gap: 24px;
